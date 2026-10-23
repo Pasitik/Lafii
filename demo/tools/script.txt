@@ -1,0 +1,15 @@
+This is Lafii, an app for Community Health Officers in Northern Ghana. Setting up takes one screen: her name, her CHPS zone and her facility. No account, no login, and no internet, ever.
+Amina's day opens on two lists: the referrals she is still waiting to hear back on, and the women due for a visit this week.
+Fati Alhassan has come in without her card, so Amina searches by name. Spellings vary, so the search is forgiving. Each record shows community, age and last visit. There is no match score.
+Two records may be the same woman. The app shows them side by side, with equal weight, and never merges them on its own. Amina asks Fati, and chooses.
+This is Fati's fourth antenatal visit. Everything can be entered by tap, or Amina can speak the summary instead.
+Blood pressure: one forty over ninety five, typed on the phone's number pad.
+Every danger sign has three answers: yes, no, or not asked. A question nobody asked is never saved as a no. Fits: no. Bleeding: no. Severe headache: yes.
+To speak instead, the app first asks Fati's consent, in Dagbani. Speech is turned into text on the phone itself, and the audio is deleted as soon as the values are checked.
+Today Amina stays with tapping. Either way, the values arrive at the same check.
+Every value is confirmed one at a time. There is no confirm-all button. A value that has not been confirmed is left out of the assessment, and anything not recorded says Missing. Nothing is guessed.
+The assessment comes from a fixed protocol rule, not from AI. High blood pressure with a severe headache: signs of pre-eclampsia, refer today. It shows exactly which values triggered it, and Amina can disagree and record why.
+Amina issues the referral. She writes this short code on Fati's paper card. The hospital scans the signed QR code with no network, and the app tells Amina what to say to Fati.
+Back home, Fati joins the list of women who have not yet arrived, most serious first. When the hospital's acknowledgement is scanned, she comes off the list.
+And the visit pays Amina back. Her register line and her monthly DHIMS2 figures are filled in for her, ready to export.
+One visit, entered once: a clinical record, a register line, a monthly report, and a referral that comes back. All on the phone. All offline.

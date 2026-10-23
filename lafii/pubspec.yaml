@@ -1,0 +1,92 @@
+name: lafii
+description: "Offline antenatal visit capture and referral loop for CHPS officers."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.13.5
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Pure Dart packages shared with the backend developer.
+  visit_schema:
+    path: ../packages/visit_schema
+  rules:
+    path: ../packages/rules
+  card_codec:
+    path: ../packages/card_codec
+  reports:
+    path: ../packages/reports
+  resolver:
+    path: ../packages/resolver
+  extract:
+    path: ../packages/extract
+
+  # Encrypted local storage (CLAUDE.md stack). The DB key lives in the
+  # Android Keystore via flutter_secure_storage.
+  sqflite_sqlcipher: ^3.4.1
+  flutter_secure_storage: ^11.2.0
+
+  # QR render and scan. mobile_scanner uses the bundled ML Kit model by
+  # default, so the first scan works on a phone that has never been online.
+  qr_flutter: ^4.1.0
+  mobile_scanner: ^7.4.2
+
+  # Export of the register and aggregate CSVs through the Android share
+  # sheet. Local file handoff only, no network.
+  share_plus: ^13.3.1
+  path_provider: ^2.1.6
+  path: ^1.9.1
+
+  # On-device speech to text (CLAUDE.md names vosk_flutter, which is Dart 2
+  # only; this is the maintained fork wrapping the same official
+  # com.alphacephei:vosk-android library). The model is bundled under
+  # assets/models and never downloaded: ModelLoader.loadFromNetwork must not
+  # be called anywhere.
+  vosk_flutter_service: ^0.1.3
+
+  # Microphone capture for speech, replacing the Vosk plugin's own capture,
+  # which records from Android's voice-recognition source with no automatic
+  # gain and arrives as near silence on many phones. Streams PCM in memory
+  # only; nothing is written to a file.
+  record: ^7.1.2
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/models/vosk-model-small-en-us-0.15.zip
+
+  # Bundled, never fetched at runtime (invariant 4: no network).
+  fonts:
+    - family: Inter
+      fonts:
+        - asset: assets/fonts/Inter-400.ttf
+          weight: 400
+        - asset: assets/fonts/Inter-500.ttf
+          weight: 500
+        - asset: assets/fonts/Inter-600.ttf
+          weight: 600
+        - asset: assets/fonts/Inter-700.ttf
+          weight: 700
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-600.ttf
+          weight: 600
+        - asset: assets/fonts/Poppins-700.ttf
+          weight: 700
+    - family: JetBrainsMono
+      fonts:
+        - asset: assets/fonts/JetBrainsMono-500.ttf
+          weight: 500
+        - asset: assets/fonts/JetBrainsMono-600.ttf
+          weight: 600
+        - asset: assets/fonts/JetBrainsMono-700.ttf
+          weight: 700

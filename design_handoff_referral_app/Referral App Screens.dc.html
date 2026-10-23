@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="design_doc_mode" content="canvas">
+<link rel="stylesheet" href="colors_and_type.css">
+<style>body{margin:0;background:#ECECEB;font-family:var(--font-sans);color:#3E3D3A}a{color:#08283B}a:hover{color:#E85200}</style>
+</helmet>
+<section style="padding:64px;display:flex;flex-direction:column;gap:72px;min-width:max-content">
+<div style="display:flex;flex-direction:column;gap:8px;max-width:760px">
+<div style="font:600 13px var(--font-sans);letter-spacing:.08em;text-transform:uppercase;color:#E85200">MVP screens · 47 stories, 11 epics</div>
+<div style="font:700 40px/1.2 var(--font-display);color:#08283B">One referral, end to end</div>
+<div style="font:400 16px/1.5 var(--font-sans);color:#3E3D3A;text-wrap:pretty">Offline-first antenatal app for CHPS officers and receiving clinicians. Each screen is labelled with the stories it covers. No spinners, toggles, scores or confirm-all controls appear anywhere, per the acceptance criteria.</div>
+</div>
+
+<!-- ROW 1 -->
+<div style="display:flex;flex-direction:column;gap:20px">
+<div style="font:600 20px var(--font-display);color:#08283B">1 · Start the day</div>
+<div style="display:flex;gap:40px;align-items:flex-start">
+
+<div data-screen-label="01 Setup" style="display:flex;flex-direction:column;gap:12px">
+<div style="font:600 13px var(--font-sans);color:#656461">01 Setup · 11.1 11.2 11.3</div>
+<div style="width:375px;height:780px;border:10px solid #1A1A18;border-radius:44px;background:#FDFDFD;overflow:hidden;display:flex;flex-direction:column;box-shadow:var(--shadow-xl)">
+<div style="height:40px;padding:0 24px;display:flex;align-items:center;justify-content:space-between;font:600 12px var(--font-sans);color:#08283B"><span>9:41</span><span>Saved on this phone</span></div>
+<div style="flex:1;padding:24px 22px;display:flex;flex-direction:column;gap:20px">
+<div style="display:flex;flex-direction:column;gap:6px"><div style="font:700 26px/1.25 var(--font-display);color:#08283B">Set up this phone</div><div style="font:400 15px/1.5 var(--font-sans)">You do this once. Your name goes on every referral you issue. No account or login is needed.</div></div>
+<div style="display:flex;flex-direction:column;gap:6px"><div style="font:600 14px var(--font-sans);color:#08283B">This phone is used to</div>
+<div style="display:grid;grid-template-columns:1fr 1fr;border:1px solid #D1D5DB;border-radius:8px;overflow:hidden"><div style="padding:12px;text-align:center;background:#08283B;color:#FDFDFD;font:600 15px var(--font-sans)">Refer patients</div><div style="padding:12px;text-align:center;color:#08283B;font:600 15px var(--font-sans)">Receive patients</div></div></div>
+<div style="display:flex;flex-direction:column;gap:6px"><div style="font:600 14px var(--font-sans);color:#08283B">Your name</div><div style="height:48px;border:1px solid #D1D5DB;border-radius:8px;padding:0 14px;display:flex;align-items:center;font:400 16px var(--font-sans);color:#1A1A18">Gifty Asare</div></div>
+<div style="display:flex;flex-direction:column;gap:6px"><div style="font:600 14px var(--font-sans);color:#08283B">CHPS zone</div><div style="height:48px;border:1px solid #D1D5DB;border-radius:8px;padding:0 14px;display:flex;align-items:center;font:400 16px var(--font-sans);color:#1A1A18">Asuboi</div></div>
+<div style="display:flex;flex-direction:column;gap:6px"><div style="font:600 14px var(--font-sans);color:#08283B">Facility</div><div style="height:48px;border:1px solid #D1D5DB;border-radius:8px;padding:0 14px;display:flex;align-items:center;font:400 16px var(--font-sans);color:#1A1A18">Asuboi CHPS Compound</div></div>
+<div style="flex:1"></div>
+<div style="height:52px;border-radius:8px;background:#08283B;color:#FDFDFD;display:flex;align-items:center;justify-content:center;font:600 16px var(--font-sans)">Start using the app</div>
+</div></div></div>
+
+<div data-screen-label="02 Home" style="display:flex;flex-direction:column;gap:12px">
+<div style="font:600 13px var(--font-sans);color:#656461">02 Home · 2.1 7.4 7.6 9.2 9.5</div>
+<div style="width:375px;height:780px;border:10px solid #1A1A18;border-radius:44px;background:#FDFDFD;overflow:hidden;display:flex;flex-direction:column;box-shadow:var(--shadow-xl)">
+<div style="height:40px;padding:0 24px;display:flex;align-items:center;justify-content:space-between;font:600 12px var(--font-sans);color:#08283B"><span>9:41</span><span>12 records waiting to sync</span></div>
+<div style="padding:12px 22px 16px;display:flex;flex-direction:column;gap:2px"><div style="font:400 14px var(--font-sans)">Asuboi CHPS · Gifty Asare</div><div style="font:700 24px var(--font-display);color:#08283B">Saturday, 17th Oct</div></div>
+<div style="flex:1;padding:0 22px;display:flex;flex-direction:column;gap:20px;overflow:hidden">
+<div style="display:flex;flex-direction:column;gap:8px">
+<div style="display:flex;justify-content:space-between;align-items:baseline"><div style="font:600 16px var(--font-sans);color:#08283B">Referrals not yet confirmed</div><div style="font:500 14px var(--font-sans);color:#08283B;text-decoration:underline">See all 3</div></div>
+<div style="border:1px solid #E5E7EB;border-radius:8px;background:#fff;box-shadow:var(--shadow-sm)">
+<div style="padding:12px 14px;display:flex;justify-content:space-between;gap:12px;border-bottom:1px solid #F0F1F3"><div><div style="font:600 15px var(--font-sans);color:#1A1A18">Efua Owusu</div><div style="font:500 13px var(--font-sans);color:#C81E1E">Emergency · Kade Govt Hospital</div></div><div style="font:400 14px var(--font-sans);white-space:nowrap">4 days</div></div>
+<div style="padding:12px 14px;display:flex;justify-content:space-between;gap:12px"><div><div style="font:600 15px var(--font-sans);color:#1A1A18">Adwoa Danso</div><div style="font:500 13px var(--font-sans);color:#B48700">Urgent · Kade Govt Hospital</div></div><div style="font:400 14px var(--font-sans);white-space:nowrap">6 days</div></div>
+</div></div>
+<div style="display:flex;flex-direction:column;gap:8px">
+<div style="font:600 16px var(--font-sans);color:#08283B">Due this week · 6</div>
+<div style="border:1px solid #E5E7EB;border-radius:8px;background:#fff;box-shadow:var(--shadow-sm)">
+<sc-for list="{{ due }}" as="d" hint-placeholder-count="4">
+<div style="padding:12px 14px;display:flex;justify-content:space-between;gap:12px;border-bottom:1px solid #F0F1F3"><div><div style="font:600 15px var(--font-sans);color:#1A1A18">{{ d.name }}</div><div style="font:400 13px var(--font-sans)">{{ d.meta }}</div></div><div style="font:500 14px var(--font-sans);color:#08283B;white-space:nowrap">{{ d.when }}</div></div>
+</sc-for>
+</div></div>
+</div>
+<div style="padding:12px 22px 20px;display:grid;grid-template-columns:1fr 1fr;gap:10px;border-top:1px solid #E5E7EB">
+<div style="height:52px;border-radius:8px;background:#08283B;color:#FDFDFD;display:flex;align-items:center;justify-content:center;font:600 15px var(--font-sans)">Scan card</div>
+<div style="height:52px;border-radius:8px;border:1px solid #D1D5DB;color:#08283B;display:flex;align-items:center;justify-content:center;font:600 15px var(--font-sans)">Find by name</div>
+</div></div></div>
+
+<div data-screen-label="03 Lookup" style="display:flex;flex-direction:column;gap:12px">
+<div style="font:600 13px var(--font-sans);color:#656461">03 Find a woman · 1.1 1.2 1.3 1.4</div>
+<div style="width:375px;height:780px;border:10px solid #1A1A18;border-radius:44px;background:#FDFDFD;overflow:hidden;display:flex;flex-direction:column;box-shadow:var(--shadow-xl)">
+<div style="height:40px;padding:0 24px;display:flex;align-items:center;justify-content:space-between;font:600 12px var(--font-sans);color:#08283B"><span>9:41</span><span>12 records waiting to sync</span></div>
+<div style="padding:8px 22px 12px;display:flex;flex-direction:column;gap:12px">
+<div style="font:700 22px var(--font-display);color:#08283B">Find a woman</div>
+<div style="height:48px;border:2px solid #08283B;border-radius:8px;padding:0 14px;display:flex;align-items:center;font:400 16px var(--font-sans);color:#1A1A18">Abena Men</div>
+<div style="font:400 14px var(--font-sans)">3 records match. Check community, age and last contact before you choose.</div>
+</div>
+<div style="flex:1;padding:0 22px;display:flex;flex-direction:column;gap:8px">
+<sc-for list="{{ candidates }}" as="c" hint-placeholder-count="3">
+<div style="border:1px solid #E5E7EB;border-radius:8px;background:#fff;padding:12px 14px;display:grid;grid-template-columns:1fr auto;gap:4px 12px">
+<div style="font:600 16px var(--font-sans);color:#1A1A18">{{ c.name }}</div><div style="font:400 14px var(--font-sans)">Age {{ c.age }}</div>
+<div style="font:400 14px var(--font-sans)">{{ c.community }}</div><div style="font:400 14px var(--font-sans)">Last seen {{ c.last }}</div>
+</div>
+</sc-for>
+</div>
+<div style="padding:12px 22px 20px;border-top:1px solid #E5E7EB;display:flex;flex-direction:column;gap:6px">
+<div style="height:52px;border-radius:8px;border:1px solid #D1D5DB;color:#08283B;display:flex;align-items:center;justify-content:center;font:600 15px var(--font-sans)">Register a new woman</div>
+<div style="font:400 12px/1.4 var(--font-sans);text-align:center">Always here, in the same place, with or without results</div>
+</div></div></div>
+
+<div data-screen-label="04 Possible duplicate" style="display:flex;flex-direction:column;gap:12px">
+<div style="font:600 13px var(--font-sans);color:#656461">04 Possible duplicate · 1.5</div>
+<div style="width:375px;height:780px;border:10px solid #1A1A18;border-radius:44px;background:#FDFDFD;overflow:hidden;display:flex;flex-direction:column;box-shadow:var(--shadow-xl)">
+<div style="height:40px;padding:0 24px;display:flex;align-items:center;justify-content:space-between;font:600 12px var(--font-sans);color:#08283B"><span>9:41</span><span>12 records waiting to sync</span></div>
+<div style="padding:8px 22px 16px;display:flex;flex-direction:column;gap:6px"><div style="font:700 22px var(--font-display);color:#08283B">These may be the same woman</div><div style="font:400 15px/1.5 var(--font-sans)">Ask her and compare. Nothing will be merged unless you choose.</div></div>
+<div style="padding:0 22px;display:grid;grid-template-columns:1fr 1fr;gap:10px">
+<sc-for list="{{ dupes }}" as="c" hint-placeholder-count="2">
+<div style="border:1px solid #D1D5DB;border-radius:8px;background:#fff;padding:14px 12px;display:flex;flex-direction:column;gap:10px">
+<div style="font:600 16px/1.3 var(--font-sans);color:#1A1A18">{{ c.name }}</div>
+<div style="display:flex;flex-direction:column;gap:2px"><div style="font:400 12px var(--font-sans);color:#656461">Age</div><div style="font:500 14px var(--font-sans);color:#1A1A18">{{ c.age }}</div></div>
+<div style="display:flex;flex-direction:column;gap:2px"><div style="font:400 12px var(--font-sans);color:#656461">Community</div><div style="font:500 14px var(--font-sans);color:#1A1A18">{{ c.community }}</div></div>
+<div style="display:flex;flex-direction:column;gap:2px"><div style="font:400 12px var(--font-sans);color:#656461">Last contact</div><div style="font:500 14px var(--font-sans);color:#1A1A18">{{ c.last }}</div></div>
+<div style="display:flex;flex-direction:column;gap:2px"><div style="font:400 12px var(--font-sans);color:#656461">Visits</div><div style="font:500 14px var(--font-sans);color:#1A1A18">{{ c.visits }}</div></div>
+<div style="display:flex;flex-direction:column;gap:2px"><div style="font:400 12px var(--font-sans);color:#656461">Phone</div><div style="font:500 14px var(--font-sans);color:#1A1A18">{{ c.phone }}</div></div>
+<div style="height:44px;border-radius:8px;border:1px solid #D1D5DB;color:#08283B;display:flex;align-items:center;justify-content:center;font:600 14px var(--font-sans)">This is her</div>
+</div>
+</sc-for>
+</div>
+<div style="flex:1"></div>
+<div style="padding:12px 22px 20px;border-top:1px solid #E5E7EB;display:flex;flex-direction:column;gap:10px">
+<div style="height:52px;border-radius:8px;border:1px solid #D1D5DB;color:#08283B;display:flex;align-items:center;justify-content:center;font:600 15px var(--font-sans)">Register a new woman</div>
+</div></div></div>
+
+</div></div>
+
+<!-- ROW 2 -->
+<div style="display:flex;flex-direction:column;gap:20px">
+<div style="font:600 20px var(--font-display);color:#08283B">2 · Capture and confirm the visit</div>
+<div style="display:flex;gap:40px;align-items:flex-start">
+
+<div data-screen-label="05 Visit by tap" style="display:flex;flex-direction:column;gap:12px">
+<div style="font:600 13px var(--font-sans);color:#656461">05 Visit by tap · 2.3 2.4 2.5 2.6 9.1 (interactive)</div>
+<div style="width:375px;height:780px;border:10px solid #1A1A18;border-radius:44px;background:#FDFDFD;overflow:hidden;display:flex;flex-direction:column;box-shadow:var(--shadow-xl)">
+<div style="height:40px;padding:0 24px;display:flex;align-items:center;justify-content:space-between;font:600 12px var(--font-sans);color:#08283B"><span>9:41</span><span>Saved on this phone</span></div>
+<div style="padding:8px 22px 12px;display:flex;align-items:flex-end;justify-content:space-between;gap:12px;border-bottom:1px solid #E5E7EB"><div style="display:flex;flex-direction:column;gap:2px"><div style="font:400 14px var(--font-sans)">Abena Mensah · 28 · Asuboi</div><div style="font:700 22px var(--font-display);color:#08283B">Antenatal visit 4</div></div><div style="height:44px;padding:0 12px;border-radius:8px;border:1px solid #D1D5DB;color:#08283B;display:flex;align-items:center;font:600 14px var(--font-sans);white-space:nowrap">Speak instead</div></div>
+<div style="flex:1;padding:10px 22px;display:flex;flex-direction:column;gap:10px;overflow:hidden">
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
+<div style="display:flex;flex-direction:column;gap:6px"><div style="font:600 13px var(--font-sans);color:#08283B">Blood pressure</div><div style="height:48px;border:1px solid #D1D5DB;border-radius:8px;padding:0 12px;display:flex;align-items:center;font:500 17px var(--font-mono);color:#1A1A18">140 / 95</div></div>
+<div style="display:flex;flex-direction:column;gap:6px"><div style="font:600 13px var(--font-sans);color:#08283B">Weeks pregnant</div><div style="height:48px;border:2px solid #08283B;border-radius:8px;padding:0 12px;display:flex;align-items:center;font:500 17px var(--font-mono);color:#1A1A18">32</div></div>
+</div>
+<div style="display:flex;flex-direction:column;gap:8px">
+<div style="display:flex;justify-content:space-between;align-items:baseline"><div style="font:600 15px var(--font-sans);color:#08283B">Danger signs</div><div style="font:400 13px var(--font-sans)">Blank means not asked</div></div>
+<sc-for list="{{ signs }}" as="s" hint-placeholder-count="5">
+<div style="display:flex;align-items:center;gap:10px;padding:3px 0;border-bottom:1px solid #F0F1F3">
+<div style="flex:1;display:flex;flex-direction:column"><div style="font:500 15px var(--font-sans);color:#1A1A18">{{ s.label }}</div><div style="font:400 12px var(--font-sans);color:#656461">{{ s.stateText }}</div></div>
+<div onClick="{{ s.setYes }}" style="width:60px;height:44px;border-radius:8px;display:flex;align-items:center;justify-content:center;font:600 14px var(--font-sans);cursor:pointer;border:{{ s.yesBorder }};background:{{ s.yesBg }};color:{{ s.yesFg }}">Yes</div>
+<div onClick="{{ s.setNo }}" style="width:60px;height:44px;border-radius:8px;display:flex;align-items:center;justify-content:center;font:600 14px var(--font-sans);cursor:pointer;border:{{ s.noBorder }};background:{{ s.noBg }};color:{{ s.noFg }}">No</div>
+</div>
+</sc-for>
+</div>
+</div>
+<div style="background:#08283B;padding:8px 6px 6px;display:grid;grid-template-columns:repeat(3,1fr);gap:6px">
+<sc-for list="{{ keys }}" as="k" hint-placeholder-count="12"><div style="height:34px;border-radius:6px;background:#395362;color:#FDFDFD;display:flex;align-items:center;justify-content:center;font:500 18px var(--font-sans)">{{ k }}</div></sc-for>
+</div>
+<div style="padding:8px 22px 12px;background:#08283B;display:flex;gap:10px">
+<div style="flex:1;height:48px;border-radius:8px;background:#FDFDFD;color:#08283B;display:flex;align-items:center;justify-content:center;font:600 15px var(--font-sans)">Save and continue</div>
+</div></div></div>
+
+<div data-screen-label="06 Recording" style="display:flex;flex-direction:column;gap:12px">
+<div style="font:600 13px var(--font-sans);color:#656461">06 Speak the summary · 2.2 2.7 10.1 10.2 10.3</div>
+<div style="width:375px;height:780px;border:10px solid #1A1A18;border-radius:44px;background:#FDFDFD;overflow:hidden;display:flex;flex-direction:column;box-shadow:var(--shadow-xl)">
+<div style="height:40px;padding:0 24px;display:flex;align-items:center;justify-content:space-between;font:600 12px var(--font-sans);color:#08283B"><span>9:41</span><span>Saved on this phone</span></div>
+<div style="padding:8px 22px 12px;display:flex;flex-direction:column;gap:2px;border-bottom:1px solid #E5E7EB"><div style="font:400 14px var(--font-sans)">Abena Mensah · 28 · Asuboi</div><div style="font:700 22px var(--font-display);color:#08283B">Antenatal visit 4</div></div>
+<div style="padding:16px 22px 0">
+<div style="border:1px solid #E5E7EB;border-radius:8px;background:#F3FAF7;padding:12px 14px;display:flex;flex-direction:column;gap:4px"><div style="font:600 14px var(--font-sans);color:#046C4E">Consent given in Twi</div><div style="font:400 13px/1.45 var(--font-sans);color:#2C2B29">Audio is deleted from this phone as soon as you confirm the fields.</div></div>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px">
+<div style="font:400 15px var(--font-sans)">Recording</div>
+<div style="font:600 80px/1 var(--font-mono);color:#08283B">{{ elapsed }}</div>
+<div style="font:400 15px var(--font-sans)">seconds</div>
+</div>
+<div style="padding:12px 22px 20px;display:flex;flex-direction:column;gap:10px">
+<div style="height:56px;border-radius:8px;background:#08283B;color:#FDFDFD;display:flex;align-items:center;justify-content:center;font:600 16px var(--font-sans)">Stop and review fields</div>
+<div style="height:48px;border-radius:8px;border:1px solid #D1D5DB;color:#08283B;display:flex;align-items:center;justify-content:center;font:600 15px var(--font-sans)">Switch to tapping</div>
+</div></div></div>
+
+<div data-screen-label="07 Confirm fields" style="display:flex;flex-direction:column;gap:12px">
+<div style="font:600 13px var(--font-sans);color:#656461">07 Confirm each value · 3.1 3.2 3.3 3.6 (interactive)</div>
+<div style="width:375px;height:780px;border:10px solid #1A1A18;border-radius:44px;background:#FDFDFD;overflow:hidden;display:flex;flex-direction:column;box-shadow:var(--shadow-xl)">
+<div style="height:40px;padding:0 24px;display:flex;align-items:center;justify-content:space-between;font:600 12px var(--font-sans);color:#08283B"><span>9:41</span><span>Saved on this phone</span></div>
+<div style="padding:8px 22px 12px;display:flex;flex-direction:column;gap:4px;border-bottom:1px solid #E5E7EB"><div style="font:700 22px var(--font-display);color:#08283B">Check what you said</div><div style="font:500 14px var(--font-sans);color:#1A1A18">{{ remainingText }}</div></div>
+<div style="flex:1;padding:12px 22px;display:flex;flex-direction:column;gap:8px;overflow:hidden">
+<sc-for list="{{ fields }}" as="f" hint-placeholder-count="6">
+<div style="border-radius:8px;padding:10px 12px;display:flex;align-items:center;gap:10px;background:{{ f.bg }};border:{{ f.border }}">
+<div style="flex:1;display:flex;flex-direction:column;gap:1px"><div style="font:400 12px var(--font-sans);color:#656461">{{ f.label }}</div><div style="font:600 17px var(--font-sans);color:{{ f.valueColor }}">{{ f.value }}</div></div>
+<div onClick="{{ f.toggle }}" style="min-width:92px;height:44px;padding:0 12px;border-radius:8px;display:flex;align-items:center;justify-content:center;font:600 14px var(--font-sans);cursor:pointer;background:{{ f.btnBg }};color:{{ f.btnFg }};border:{{ f.btnBorder }}">{{ f.btn }}</div>
+</div>
+</sc-for>
+</div>
+<div style="padding:12px 22px 20px;border-top:1px solid #E5E7EB;display:flex;flex-direction:column;gap:6px">
+<div style="height:52px;border-radius:8px;background:#08283B;color:#FDFDFD;display:flex;align-items:center;justify-content:center;font:600 15px var(--font-sans)">Continue to assessment</div>
+<div style="font:400 12px/1.4 var(--font-sans);text-align:center">Unconfirmed values are left out of the assessment</div>
+</div></div></div>
+
+</div></div>
+
+<!-- ROW 3 -->
+<div style="display:flex;flex-direction:column;gap:20px">
+<div style="font:600 20px var(--font-display);color:#08283B">3 · Assess and refer</div>
+<div style="display:flex;gap:40px;align-items:flex-start">
+
+<div data-screen-label="08 Assessment" style="display:flex;flex-direction:column;gap:12px">
+<div style="font:600 13px var(--font-sans);color:#656461">08 Assessment · 4.1 4.2 4.3</div>
+<div style="width:375px;height:780px;border:10px solid #1A1A18;border-radius:44px;background:#FDFDFD;overflow:hidden;display:flex;flex-direction:column;box-shadow:var(--shadow-xl)">
+<div style="height:40px;padding:0 24px;display:flex;align-items:center;justify-content:space-between;font:600 12px var(--font-sans);color:#08283B"><span>9:41</span><span>Saved on this phone</span></div>
+<div style="background:#C81E1E;color:#FDFDFD;padding:18px 22px;display:flex;flex-direction:column;gap:4px">
+<div style="font:600 14px var(--font-sans);letter-spacing:.04em;text-transform:uppercase">Emergency · refer today</div>
+<div style="font:700 26px/1.2 var(--font-display)">Signs of pre-eclampsia</div>
+</div>
+<div style="flex:1;padding:18px 22px;display:flex;flex-direction:column;gap:18px">
+<div style="display:flex;flex-direction:column;gap:8px"><div style="font:600 15px var(--font-sans);color:#08283B">Because you recorded</div>
+<div style="border:1px solid #E5E7EB;border-radius:8px;background:#fff">
+<div style="padding:12px 14px;border-bottom:1px solid #F0F1F3;font:500 16px var(--font-sans);color:#1A1A18">Blood pressure 140/95</div>
+<div style="padding:12px 14px;border-bottom:1px solid #F0F1F3;font:500 16px var(--font-sans);color:#1A1A18">Severe headache: Yes</div>
+<div style="padding:12px 14px;font:500 16px var(--font-sans);color:#1A1A18">32 weeks pregnant</div>
+</div></div>
+<div style="display:flex;flex-direction:column;gap:4px"><div style="font:600 15px var(--font-sans);color:#08283B">Protocol rule</div><div style="font:400 14px/1.5 var(--font-sans)">PE-2: blood pressure 140/90 or higher after 20 weeks, with severe headache. Signed off by the team midwife.</div></div>
+<div style="display:flex;flex-direction:column;gap:4px"><div style="font:600 15px var(--font-sans);color:#08283B">Not used</div><div style="font:400 14px/1.5 var(--font-sans)">Haemoglobin — missing</div></div>
+</div>
+<div style="padding:12px 22px 20px;border-top:1px solid #E5E7EB;display:grid;grid-template-columns:1fr 1.4fr;gap:10px">
+<div style="height:52px;border-radius:8px;border:1px solid #D1D5DB;color:#08283B;display:flex;align-items:center;justify-content:center;font:600 15px var(--font-sans)">I disagree</div>
+<div style="height:52px;border-radius:8px;background:#08283B;color:#FDFDFD;display:flex;align-items:center;justify-content:center;font:600 15px var(--font-sans)">Issue referral</div>
+</div></div></div>
+
+<div data-screen-label="09 Disagree" style="display:flex;flex-direction:column;gap:12px">
+<div style="font:600 13px var(--font-sans);color:#656461">09 Record disagreement · 4.3</div>
+<div style="width:375px;height:780px;border:10px solid #1A1A18;border-radius:44px;background:#FDFDFD;overflow:hidden;display:flex;flex-direction:column;box-shadow:var(--shadow-xl)">
+<div style="height:40px;padding:0 24px;display:flex;align-items:center;justify-content:space-between;font:600 12px var(--font-sans);color:#08283B"><span>9:41</span><span>Saved on this phone</span></div>
+<div style="padding:8px 22px 16px;display:flex;flex-direction:column;gap:6px"><div style="font:700 22px var(--font-display);color:#08283B">Why do you disagree?</div><div style="font:400 15px/1.5 var(--font-sans)">Your judgement is recorded alongside the rule. You decide what happens next.</div></div>
+<div style="flex:1;padding:0 22px;display:flex;flex-direction:column;gap:8px">
+<sc-for list="{{ reasons }}" as="r" hint-placeholder-count="4">
+<div style="min-height:48px;border-radius:8px;padding:10px 14px;display:flex;align-items:center;font:500 15px var(--font-sans);border:{{ r.border }};background:{{ r.bg }};color:{{ r.fg }}">{{ r.label }}</div>
+</sc-for>
+<div style="display:flex;flex-direction:column;gap:6px;padding-top:8px"><div style="font:600 14px var(--font-sans);color:#08283B">Note</div><div style="height:88px;border:1px solid #D1D5DB;border-radius:8px;padding:12px 14px;font:400 15px/1.45 var(--font-sans);color:#1A1A18">Rechecked after 15 min rest: 132/86. Headache eased.</div></div>
+</div>
+<div style="padding:12px 22px 20px;border-top:1px solid #E5E7EB;display:grid;grid-template-columns:1fr 1fr;gap:10px">
+<div style="height:52px;border-radius:8px;border:1px solid #D1D5DB;color:#08283B;display:flex;align-items:center;justify-content:center;font:600 14px var(--font-sans)">Refer anyway</div>
+<div style="height:52px;border-radius:8px;background:#08283B;color:#FDFDFD;display:flex;align-items:center;justify-content:center;font:600 14px var(--font-sans)">Do not refer</div>
+</div></div></div>
+
+<div data-screen-label="10 Referral issued" style="display:flex;flex-direction:column;gap:12px">
+<div style="font:600 13px var(--font-sans);color:#656461">10 Referral issued · 5.1 5.2 5.3 5.4 5.5</div>
+<div style="width:375px;height:780px;border:10px solid #1A1A18;border-radius:44px;background:#FDFDFD;overflow:hidden;display:flex;flex-direction:column;box-shadow:var(--shadow-xl)">
+<div style="height:40px;padding:0 24px;display:flex;align-items:center;justify-content:space-between;font:600 12px var(--font-sans);color:#08283B"><span>9:41</span><span>Saved on this phone</span></div>
+<div style="padding:8px 22px 12px;display:flex;flex-direction:column;gap:2px"><div style="font:400 14px var(--font-sans)">Abena Mensah → Kade Govt Hospital</div><div style="font:700 22px var(--font-display);color:#08283B">Write this code on her card</div></div>
+<div style="padding:0 22px;display:flex;flex-direction:column;gap:14px;flex:1">
+<div style="border:2px dashed #7E7D7B;border-radius:8px;padding:14px;text-align:center;font:700 40px/1 var(--font-mono);letter-spacing:.08em;color:#08283B">K7M 4QP</div>
+<div style="display:flex;gap:14px;align-items:center">
+<div style="width:150px;height:150px;flex-shrink:0;padding:8px;background:#fff;border:1px solid #E5E7EB;border-radius:8px;display:grid;grid-template-columns:repeat(25,1fr)">
+<sc-for list="{{ qrA }}" as="q" hint-placeholder-count="0"><div style="background:{{ q }}"></div></sc-for>
+</div>
+<div style="font:400 13px/1.5 var(--font-sans)">The hospital scans this from your screen. It holds her essentials, signed by this phone, and needs no network.</div>
+</div>
+<div style="border:1px solid #E5E7EB;border-radius:8px;background:#EFF7FE;padding:12px 14px;display:flex;flex-direction:column;gap:4px">
+<div style="font:600 14px var(--font-sans);color:#08283B">Tell Abena</div>
+<div style="font:400 14px/1.5 var(--font-sans);color:#2C2B29">Her blood pressure is high and her headache is a warning sign. She should go to Kade Government Hospital today and show this card at the front desk.</div>
+</div>
+</div>
+<div style="padding:12px 22px 20px;border-top:1px solid #E5E7EB">
+<div style="height:52px;border-radius:8px;background:#08283B;color:#FDFDFD;display:flex;align-items:center;justify-content:center;font:600 15px var(--font-sans)">Code written on the card</div>
+</div></div></div>
+
+</div></div>
+
+<!-- ROW 4 -->
+<div style="display:flex;flex-direction:column;gap:20px">
+<div style="font:600 20px var(--font-display);color:#08283B">4 · Receive at the hospital (receive mode)</div>
+<div style="display:flex;gap:40px;align-items:flex-start">
+
+<div data-screen-label="11 Arrival summary" style="display:flex;flex-direction:column;gap:12px">
+<div style="font:600 13px var(--font-sans);color:#656461">11 Arriving patient · 6.1 6.2 6.3 5.4</div>
+<div style="width:375px;height:780px;border:10px solid #1A1A18;border-radius:44px;background:#FDFDFD;overflow:hidden;display:flex;flex-direction:column;box-shadow:var(--shadow-xl)">
+<div style="height:40px;padding:0 24px;display:flex;align-items:center;justify-content:space-between;font:600 12px var(--font-sans);color:#FDFDFD;background:#08283B"><span>9:41</span><span>Receive mode · Kade Govt Hospital</span></div>
+<div style="padding:14px 22px;display:flex;flex-direction:column;gap:6px;background:#08283B;color:#FDFDFD">
+<div style="font:700 24px var(--font-display)">Abena Mensah, 28</div>
+<div style="font:400 14px var(--font-sans)">Referral K7M 4QP · from Gifty Asare, Asuboi CHPS</div>
+</div>
+<div style="padding:10px 22px;background:#DEF7EC;font:600 14px var(--font-sans);color:#046C4E">Signature valid · issued 17th Oct, 2026 10:14 am</div>
+<div style="flex:1;padding:16px 22px;display:flex;flex-direction:column;gap:16px">
+<div style="display:flex;flex-direction:column;gap:2px"><div style="font:600 13px var(--font-sans);color:#C81E1E;text-transform:uppercase;letter-spacing:.04em">Emergency</div><div style="font:700 20px var(--font-display);color:#08283B">Signs of pre-eclampsia</div></div>
+<div style="border:1px solid #E5E7EB;border-radius:8px;background:#fff">
+<sc-for list="{{ summary }}" as="s" hint-placeholder-count="5">
+<div style="padding:10px 14px;display:flex;justify-content:space-between;gap:12px;border-bottom:1px solid #F0F1F3"><div style="font:400 14px var(--font-sans)">{{ s.k }}</div><div style="font:600 14px var(--font-sans);color:#1A1A18;text-align:right">{{ s.v }}</div></div>
+</sc-for>
+</div>
+<div style="font:400 13px/1.5 var(--font-sans)">Read from her card. Nothing was synced in advance.</div>
+</div>
+<div style="padding:12px 22px 20px;border-top:1px solid #E5E7EB">
+<div style="height:56px;border-radius:8px;background:#08283B;color:#FDFDFD;display:flex;align-items:center;justify-content:center;font:600 16px var(--font-sans)">Confirm arrival</div>
+</div></div></div>
+
+<div data-screen-label="12 Acknowledgement" style="display:flex;flex-direction:column;gap:12px">
+<div style="font:600 13px var(--font-sans);color:#656461">12 Acknowledgement · 6.4 6.5</div>
+<div style="width:375px;height:780px;border:10px solid #1A1A18;border-radius:44px;background:#FDFDFD;overflow:hidden;display:flex;flex-direction:column;box-shadow:var(--shadow-xl)">
+<div style="height:40px;padding:0 24px;display:flex;align-items:center;justify-content:space-between;font:600 12px var(--font-sans);color:#FDFDFD;background:#08283B"><span>9:41</span><span>Receive mode · Kade Govt Hospital</span></div>
+<div style="padding:14px 22px 10px;display:flex;flex-direction:column;gap:4px"><div style="font:600 14px var(--font-sans);color:#057A55">Arrival confirmed · 11:01 am</div><div style="font:700 22px var(--font-display);color:#08283B">Add an outcome</div></div>
+<div style="flex:1;padding:0 22px;display:flex;flex-direction:column;gap:14px">
+<div style="display:flex;flex-wrap:wrap;gap:8px">
+<div style="height:40px;padding:0 14px;border-radius:9999px;background:#08283B;color:#FDFDFD;display:flex;align-items:center;font:600 14px var(--font-sans)">Admitted</div>
+<div style="height:40px;padding:0 14px;border-radius:9999px;border:1px solid #D1D5DB;color:#08283B;display:flex;align-items:center;font:600 14px var(--font-sans)">Treated, sent home</div>
+<div style="height:40px;padding:0 14px;border-radius:9999px;border:1px solid #D1D5DB;color:#08283B;display:flex;align-items:center;font:600 14px var(--font-sans)">Transferred</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:6px"><div style="font:600 14px var(--font-sans);color:#08283B">Follow-up at CHPS</div><div style="height:48px;border:1px solid #D1D5DB;border-radius:8px;padding:0 14px;display:flex;align-items:center;font:400 16px var(--font-sans);color:#1A1A18">24th Oct, 2026</div></div>
+<div style="display:flex;gap:14px;align-items:center;padding-top:4px">
+<div style="width:140px;height:140px;flex-shrink:0;padding:8px;background:#fff;border:1px solid #E5E7EB;border-radius:8px;display:grid;grid-template-columns:repeat(25,1fr)">
+<sc-for list="{{ qrB }}" as="q" hint-placeholder-count="0"><div style="background:{{ q }}"></div></sc-for>
+</div>
+<div style="font:400 13px/1.5 var(--font-sans)">Acknowledgement for Gifty Asare. Abena can show this on her card when she returns, or Gifty can scan it here.</div>
+</div>
+</div>
+<div style="padding:12px 22px 20px;border-top:1px solid #E5E7EB">
+<div style="height:52px;border-radius:8px;background:#08283B;color:#FDFDFD;display:flex;align-items:center;justify-content:center;font:600 15px var(--font-sans)">Done</div>
+</div></div></div>
+
+</div></div>
+
+<!-- ROW 5 -->
+<div style="display:flex;flex-direction:column;gap:20px">
+<div style="font:600 20px var(--font-display);color:#08283B">5 · Close the loop and get paid back</div>
+<div style="display:flex;gap:40px;align-items:flex-start">
+
+<div data-screen-label="13 Chase list" style="display:flex;flex-direction:column;gap:12px">
+<div style="font:600 13px var(--font-sans);color:#656461">13 Unconfirmed referrals · 7.1 7.4 7.5</div>
+<div style="width:375px;height:780px;border:10px solid #1A1A18;border-radius:44px;background:#FDFDFD;overflow:hidden;display:flex;flex-direction:column;box-shadow:var(--shadow-xl)">
+<div style="height:40px;padding:0 24px;display:flex;align-items:center;justify-content:space-between;font:600 12px var(--font-sans);color:#08283B"><span>9:41</span><span>12 records waiting to sync</span></div>
+<div style="padding:8px 22px 12px;display:flex;flex-direction:column;gap:4px"><div style="font:700 22px var(--font-display);color:#08283B">Not yet arrived</div><div style="font:400 14px var(--font-sans)">Most serious first, then oldest</div></div>
+<div style="flex:1;padding:0 22px;display:flex;flex-direction:column">
+<sc-for list="{{ chase }}" as="c" hint-placeholder-count="3">
+<div style="padding:14px 0;border-bottom:1px solid #E5E7EB;display:flex;flex-direction:column;gap:4px">
+<div style="display:flex;justify-content:space-between;gap:12px"><div style="font:600 16px var(--font-sans);color:#1A1A18">{{ c.name }}</div><div style="font:400 15px var(--font-sans);color:#1A1A18;white-space:nowrap">{{ c.days }}</div></div>
+<div style="font:600 13px var(--font-sans);color:{{ c.color }}">{{ c.urgency }} · {{ c.finding }}</div>
+<div style="font:400 13px var(--font-sans)">{{ c.meta }}</div>
+</div>
+</sc-for>
+</div>
+<div style="padding:12px 22px 20px;border-top:1px solid #E5E7EB">
+<div style="height:52px;border-radius:8px;background:#08283B;color:#FDFDFD;display:flex;align-items:center;justify-content:center;font:600 15px var(--font-sans)">Scan an acknowledgement</div>
+</div></div></div>
+
+<div data-screen-label="14 Register and report" style="display:flex;flex-direction:column;gap:12px">
+<div style="font:600 13px var(--font-sans);color:#656461">14 Register and monthly report · 8.1 8.2 8.3 8.4</div>
+<div style="width:375px;height:780px;border:10px solid #1A1A18;border-radius:44px;background:#FDFDFD;overflow:hidden;display:flex;flex-direction:column;box-shadow:var(--shadow-xl)">
+<div style="height:40px;padding:0 24px;display:flex;align-items:center;justify-content:space-between;font:600 12px var(--font-sans);color:#08283B"><span>9:41</span><span>12 records waiting to sync</span></div>
+<div style="padding:8px 22px 12px;display:flex;flex-direction:column;gap:4px"><div style="font:700 22px var(--font-display);color:#08283B">October report</div><div style="font:400 14px var(--font-sans)">Filled from the 41 visits you captured</div></div>
+<div style="flex:1;padding:0 22px;display:flex;flex-direction:column;gap:16px;overflow:hidden">
+<div style="display:flex;flex-direction:column;gap:6px"><div style="font:600 15px var(--font-sans);color:#08283B">Today’s register line</div>
+<div style="border:1px solid #E5E7EB;border-radius:8px;background:#fff;padding:12px 14px;font:500 13px/1.6 var(--font-mono);color:#1A1A18">17/10 · Abena Mensah · 28 · ANC4 · GA 32 · BP 140/95 · Ref: Kade GH (K7M 4QP)</div></div>
+<div style="display:flex;flex-direction:column;gap:6px"><div style="font:600 15px var(--font-sans);color:#08283B">DHIMS2 data elements</div>
+<div style="border:1px solid #E5E7EB;border-radius:8px;background:#fff">
+<sc-for list="{{ dhims }}" as="r" hint-placeholder-count="6">
+<div style="padding:10px 14px;display:flex;justify-content:space-between;gap:12px;border-bottom:1px solid #F0F1F3"><div style="font:400 14px var(--font-sans);color:#2C2B29">{{ r.k }}</div><div style="font:600 15px var(--font-mono);color:#1A1A18">{{ r.v }}</div></div>
+</sc-for>
+</div></div>
+</div>
+<div style="padding:12px 22px 20px;border-top:1px solid #E5E7EB">
+<div style="height:52px;border-radius:8px;background:#08283B;color:#FDFDFD;display:flex;align-items:center;justify-content:center;font:600 15px var(--font-sans)">Export register and report</div>
+</div></div></div>
+
+</div></div>
+
+<!-- ROW 6 -->
+<div style="display:flex;flex-direction:column;gap:20px">
+<div style="font:600 20px var(--font-display);color:#08283B">6 · Edge states</div>
+<div style="display:flex;gap:40px;align-items:flex-start">
+
+<div data-screen-label="15 Lookup no results" style="display:flex;flex-direction:column;gap:12px">
+<div style="font:600 13px var(--font-sans);color:#656461">15 No match · 1.2 1.4</div>
+<div style="width:375px;height:780px;border:10px solid #1A1A18;border-radius:44px;background:#FDFDFD;overflow:hidden;display:flex;flex-direction:column;box-shadow:var(--shadow-xl)">
+<div style="height:40px;padding:0 24px;display:flex;align-items:center;justify-content:space-between;font:600 12px var(--font-sans);color:#08283B"><span>9:41</span><span>12 records waiting to sync</span></div>
+<div style="padding:8px 22px 12px;display:flex;flex-direction:column;gap:12px">
+<div style="font:700 22px var(--font-display);color:#08283B">Find a woman</div>
+<div style="height:48px;border:2px solid #08283B;border-radius:8px;padding:0 14px;display:flex;align-items:center;font:400 16px var(--font-sans);color:#1A1A18">Ama Serwaa</div>
+<div style="font:400 14px var(--font-sans)">No records match. Try another spelling, or register her below.</div>
+</div>
+<div style="flex:1"></div>
+<div style="padding:12px 22px 20px;border-top:1px solid #E5E7EB;display:flex;flex-direction:column;gap:6px">
+<div style="height:52px;border-radius:8px;border:1px solid #D1D5DB;color:#08283B;display:flex;align-items:center;justify-content:center;font:600 15px var(--font-sans)">Register a new woman</div>
+<div style="font:400 12px/1.4 var(--font-sans);text-align:center">Always here, in the same place, with or without results</div>
+</div></div></div>
+
+<div data-screen-label="16 Consent" style="display:flex;flex-direction:column;gap:12px">
+<div style="font:600 13px var(--font-sans);color:#656461">16 Consent before recording · 10.1 10.2</div>
+<div style="width:375px;height:780px;border:10px solid #1A1A18;border-radius:44px;background:#FDFDFD;overflow:hidden;display:flex;flex-direction:column;box-shadow:var(--shadow-xl)">
+<div style="height:40px;padding:0 24px;display:flex;align-items:center;justify-content:space-between;font:600 12px var(--font-sans);color:#08283B"><span>9:41</span><span>Saved on this phone</span></div>
+<div style="padding:8px 22px 12px;display:flex;flex-direction:column;gap:2px;border-bottom:1px solid #E5E7EB"><div style="font:400 14px var(--font-sans)">Abena Mensah · 28 · Asuboi</div><div style="font:700 22px var(--font-display);color:#08283B">Ask before recording</div></div>
+<div style="flex:1;padding:18px 22px;display:flex;flex-direction:column;gap:16px">
+<div style="display:flex;flex-direction:column;gap:6px"><div style="font:600 14px var(--font-sans);color:#08283B">Her language</div>
+<div style="display:grid;grid-template-columns:repeat(3,1fr);border:1px solid #D1D5DB;border-radius:8px;overflow:hidden"><div style="padding:12px;text-align:center;background:#08283B;color:#FDFDFD;font:600 15px var(--font-sans)">Twi</div><div style="padding:12px;text-align:center;color:#08283B;font:600 15px var(--font-sans);border-left:1px solid #D1D5DB">Ewe</div><div style="padding:12px;text-align:center;color:#08283B;font:600 15px var(--font-sans);border-left:1px solid #D1D5DB">English</div></div></div>
+<div style="height:52px;border-radius:8px;border:1px solid #D1D5DB;color:#08283B;display:flex;align-items:center;justify-content:center;font:600 15px var(--font-sans)">Play the prompt to her</div>
+<div style="border:1px solid #E5E7EB;border-radius:8px;background:#fff;padding:12px 14px;display:flex;flex-direction:column;gap:4px"><div style="font:600 14px var(--font-sans);color:#08283B">What she hears</div><div style="font:400 14px/1.5 var(--font-sans);color:#2C2B29">The nurse would like to record her notes about your visit. The recording stays on this phone and is deleted once she has checked it. If you say no, your care is exactly the same.</div></div>
+</div>
+<div style="padding:12px 22px 20px;border-top:1px solid #E5E7EB;display:grid;grid-template-columns:1fr 1fr;gap:10px">
+<div style="height:52px;border-radius:8px;border:1px solid #D1D5DB;color:#08283B;display:flex;align-items:center;justify-content:center;font:600 14px var(--font-sans)">She said no</div>
+<div style="height:52px;border-radius:8px;background:#08283B;color:#FDFDFD;display:flex;align-items:center;justify-content:center;font:600 14px var(--font-sans)">She agreed</div>
+</div></div></div>
+
+<div data-screen-label="17 Routine outcome" style="display:flex;flex-direction:column;gap:12px">
+<div style="font:600 13px var(--font-sans);color:#656461">17 Routine outcome · 4.4 8.1</div>
+<div style="width:375px;height:780px;border:10px solid #1A1A18;border-radius:44px;background:#FDFDFD;overflow:hidden;display:flex;flex-direction:column;box-shadow:var(--shadow-xl)">
+<div style="height:40px;padding:0 24px;display:flex;align-items:center;justify-content:space-between;font:600 12px var(--font-sans);color:#08283B"><span>9:41</span><span>Saved on this phone</span></div>
+<div style="background:#DEF7EC;color:#046C4E;padding:18px 22px;display:flex;flex-direction:column;gap:4px">
+<div style="font:600 14px var(--font-sans);letter-spacing:.04em;text-transform:uppercase">Routine</div>
+<div style="font:700 26px/1.2 var(--font-display);color:#08283B">No danger signs recorded</div>
+</div>
+<div style="flex:1;padding:18px 22px;display:flex;flex-direction:column;gap:18px">
+<div style="display:flex;flex-direction:column;gap:6px"><div style="font:600 14px var(--font-sans);color:#08283B">Next contact</div><div style="height:48px;border:1px solid #D1D5DB;border-radius:8px;padding:0 14px;display:flex;align-items:center;font:500 16px var(--font-sans);color:#1A1A18">14th Nov, 2026 · visit 3</div><div style="font:400 13px var(--font-sans)">4 weeks from today, by protocol for 22 weeks</div></div>
+<div style="display:flex;flex-direction:column;gap:6px"><div style="font:600 14px var(--font-sans);color:#08283B">Register line</div><div style="border:1px solid #E5E7EB;border-radius:8px;background:#fff;padding:12px 14px;font:500 13px/1.6 var(--font-mono);color:#1A1A18">17/10 · Akosua Boateng · 24 · ANC2 · GA 22 · BP 112/70 · Next 14/11</div></div>
+</div>
+<div style="padding:12px 22px 20px;border-top:1px solid #E5E7EB">
+<div style="height:52px;border-radius:8px;background:#08283B;color:#FDFDFD;display:flex;align-items:center;justify-content:center;font:600 15px var(--font-sans)">Finish visit</div>
+</div></div></div>
+
+<div data-screen-label="18 Invalid signature" style="display:flex;flex-direction:column;gap:12px">
+<div style="font:600 13px var(--font-sans);color:#656461">18 Signature not valid · 5.4</div>
+<div style="width:375px;height:780px;border:10px solid #1A1A18;border-radius:44px;background:#FDFDFD;overflow:hidden;display:flex;flex-direction:column;box-shadow:var(--shadow-xl)">
+<div style="height:40px;padding:0 24px;display:flex;align-items:center;justify-content:space-between;font:600 12px var(--font-sans);color:#FDFDFD;background:#08283B"><span>9:41</span><span>Receive mode · Kade Govt Hospital</span></div>
+<div style="padding:14px 22px;display:flex;flex-direction:column;gap:6px;background:#08283B;color:#FDFDFD">
+<div style="font:700 24px var(--font-display)">Abena Mensah, 28</div>
+<div style="font:400 14px var(--font-sans)">Referral K7M 4QP · from Gifty Asare, Asuboi CHPS</div>
+</div>
+<div style="padding:12px 22px;background:#FDE8E8;display:flex;flex-direction:column;gap:2px"><div style="font:600 14px var(--font-sans);color:#C81E1E">Signature not valid</div><div style="font:400 13px/1.45 var(--font-sans);color:#2C2B29">This card may have been changed after it was issued. Check her history with her directly.</div></div>
+<div style="flex:1;padding:16px 22px;display:flex;flex-direction:column;gap:12px">
+<div style="border:1px solid #E5E7EB;border-radius:8px;background:#fff">
+<div style="padding:10px 14px;display:flex;justify-content:space-between;gap:12px;border-bottom:1px solid #F0F1F3"><div style="font:400 14px var(--font-sans)">Blood pressure</div><div style="font:600 14px var(--font-sans);color:#1A1A18">140/95</div></div>
+<div style="padding:10px 14px;display:flex;justify-content:space-between;gap:12px;border-bottom:1px solid #F0F1F3"><div style="font:400 14px var(--font-sans)">Severe headache</div><div style="font:600 14px var(--font-sans);color:#1A1A18">Yes</div></div>
+<div style="padding:10px 14px;display:flex;justify-content:space-between;gap:12px"><div style="font:400 14px var(--font-sans)">Weeks pregnant</div><div style="font:600 14px var(--font-sans);color:#1A1A18">32</div></div>
+</div>
+<div style="font:400 13px/1.5 var(--font-sans)">Values are shown as read from the card. Treat them as unverified.</div>
+</div>
+<div style="padding:12px 22px 20px;border-top:1px solid #E5E7EB">
+<div style="height:56px;border-radius:8px;background:#08283B;color:#FDFDFD;display:flex;align-items:center;justify-content:center;font:600 16px var(--font-sans)">Confirm arrival</div>
+</div></div></div>
+
+<div data-screen-label="19 Loop closed" style="display:flex;flex-direction:column;gap:12px">
+<div style="font:600 13px var(--font-sans);color:#656461">19 Referral closed · 7.1 7.2</div>
+<div style="width:375px;height:780px;border:10px solid #1A1A18;border-radius:44px;background:#FDFDFD;overflow:hidden;display:flex;flex-direction:column;box-shadow:var(--shadow-xl)">
+<div style="height:40px;padding:0 24px;display:flex;align-items:center;justify-content:space-between;font:600 12px var(--font-sans);color:#08283B"><span>9:41</span><span>13 records waiting to sync</span></div>
+<div style="padding:8px 22px 12px;display:flex;flex-direction:column;gap:4px"><div style="font:600 14px var(--font-sans);color:#057A55">Acknowledgement scanned</div><div style="font:700 22px var(--font-display);color:#08283B">Abena Mensah arrived</div></div>
+<div style="flex:1;padding:0 22px;display:flex;flex-direction:column;gap:16px">
+<div style="border:1px solid #E5E7EB;border-radius:8px;background:#fff">
+<div style="padding:10px 14px;display:flex;justify-content:space-between;gap:12px;border-bottom:1px solid #F0F1F3"><div style="font:400 14px var(--font-sans)">Arrived</div><div style="font:600 14px var(--font-sans);color:#1A1A18">17th Oct, 2026 · 11:01 am</div></div>
+<div style="padding:10px 14px;display:flex;justify-content:space-between;gap:12px;border-bottom:1px solid #F0F1F3"><div style="font:400 14px var(--font-sans)">Outcome</div><div style="font:600 14px var(--font-sans);color:#1A1A18">Admitted</div></div>
+<div style="padding:10px 14px;display:flex;justify-content:space-between;gap:12px;border-bottom:1px solid #F0F1F3"><div style="font:400 14px var(--font-sans)">Follow-up at CHPS</div><div style="font:600 14px var(--font-sans);color:#1A1A18">24th Oct, 2026</div></div>
+<div style="padding:10px 14px;display:flex;justify-content:space-between;gap:12px"><div style="font:400 14px var(--font-sans)">Received by</div><div style="font:600 14px var(--font-sans);color:#1A1A18">Kade Govt Hospital</div></div>
+</div>
+<div style="font:400 14px/1.5 var(--font-sans)">Removed from your unconfirmed list. The follow-up is added to your due list.</div>
+</div>
+<div style="padding:12px 22px 20px;border-top:1px solid #E5E7EB">
+<div style="height:52px;border-radius:8px;background:#08283B;color:#FDFDFD;display:flex;align-items:center;justify-content:center;font:600 15px var(--font-sans)">Back to home</div>
+</div></div></div>
+
+</div></div>
+</section>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = {
+    signs: { headache: 'yes', vision: null, bleeding: 'no', fits: null, swelling: null },
+    confirmed: { sys: true, dia: false, ga: false, wt: false, fh: false, head: false }
+  };
+  qr(seed) {
+    const n = 25; let s = seed; const rnd = () => (s = (s * 9301 + 49297) % 233280) / 233280;
+    const finder = (r, c) => {
+      for (const [R, C] of [[0, 0], [0, n - 7], [n - 7, 0]]) {
+        const y = r - R, x = c - C;
+        if (y >= 0 && y < 7 && x >= 0 && x < 7) return (y === 0 || y === 6 || x === 0 || x === 6 || (y >= 2 && y <= 4 && x >= 2 && x <= 4)) ? 1 : 0;
+        if (y >= -1 && y <= 7 && x >= -1 && x <= 7) return 0;
+      }
+      return null;
+    };
+    const out = [];
+    for (let r = 0; r < n; r++) for (let c = 0; c < n; c++) {
+      const f = finder(r, c); const on = f === null ? rnd() > 0.52 : f;
+      out.push(on ? '#08283B' : 'transparent');
+    }
+    return out;
+  }
+  renderVals() {
+    const navy = '#08283B';
+    const signDefs = [['headache', 'Severe headache'], ['vision', 'Blurred vision'], ['bleeding', 'Vaginal bleeding'], ['fits', 'Fits or convulsions'], ['swelling', 'Swelling of face or hands']];
+    const signs = signDefs.map(([k, label]) => {
+      const v = this.state.signs[k];
+      const set = val => () => this.setState(st => ({ signs: { ...st.signs, [k]: st.signs[k] === val ? null : val } }));
+      const sel = on => on ? { b: '2px solid ' + navy, bg: navy, fg: '#FDFDFD' } : { b: '1px dashed #7E7D7B', bg: '#FDFDFD', fg: navy };
+      const y = sel(v === 'yes'), n = sel(v === 'no');
+      return { label, stateText: v === 'yes' ? 'Yes' : v === 'no' ? 'No' : 'Not asked', setYes: set('yes'), setNo: set('no'),
+        yesBorder: y.b, yesBg: y.bg, yesFg: y.fg, noBorder: n.b, noBg: n.bg, noFg: n.fg };
+    });
+    const fieldDefs = [['sys', 'Systolic blood pressure', '140 mmHg'], ['dia', 'Diastolic blood pressure', '95 mmHg'], ['ga', 'Weeks pregnant', '32'], ['wt', 'Weight', '64 kg'], ['fh', 'Fundal height', '30 cm'], ['head', 'Severe headache', 'Yes'], ['hb', 'Haemoglobin', null]];
+    const fields = fieldDefs.map(([k, label, value]) => {
+      if (value === null) return { label, value: 'Missing', valueColor: '#C81E1E', bg: '#FDFDFD', border: '1px solid #E5E7EB', btn: 'Enter', btnBg: '#FDFDFD', btnFg: navy, btnBorder: '1px solid #D1D5DB', toggle: () => {} };
+      const c = this.state.confirmed[k];
+      const toggle = () => this.setState(st => ({ confirmed: { ...st.confirmed, [k]: !st.confirmed[k] } }));
+      return c
+        ? { label, value, valueColor: '#1A1A18', bg: '#fff', border: '1px solid #E5E7EB', btn: 'Confirmed', btnBg: '#F3FAF7', btnFg: '#046C4E', btnBorder: '1px solid #DEF7EC', toggle }
+        : { label, value, valueColor: '#656461', bg: '#FDFDFD', border: '2px dashed #7E7D7B', btn: 'Confirm', btnBg: navy, btnFg: '#FDFDFD', btnBorder: '1px solid ' + navy, toggle };
+    });
+    const remaining = Object.values(this.state.confirmed).filter(v => !v).length;
+    const reasonSel = 'Reading taken before she rested';
+    return {
+      signs, fields,
+      remainingText: remaining ? `${remaining} of 6 values still need you · 1 missing` : 'All values confirmed · 1 missing',
+      keys: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '/', '0', 'Delete'],
+      elapsed: '42',
+      due: [
+        { name: 'Abena Mensah', meta: 'Asuboi · 32 weeks · visit 4', when: 'Today' },
+        { name: 'Akosua Boateng', meta: 'Nkwanta · 18 weeks · visit 2', when: 'Today' },
+        { name: 'Yaa Frimpong', meta: 'Asuboi · 36 weeks · visit 6', when: 'Mon' },
+        { name: 'Esi Addo', meta: 'Odumase · 24 weeks · visit 3', when: 'Tue' }
+      ],
+      candidates: [
+        { name: 'Abena Mensah', age: 28, community: 'Asuboi', last: '19th Sep, 2026' },
+        { name: 'Abena Mensah', age: 34, community: 'Nkwanta', last: '2nd Jun, 2026' },
+        { name: 'Abena Mensa', age: 27, community: 'Asuboi', last: '11th Mar, 2026' }
+      ],
+      dupes: [
+        { name: 'Abena Mensah', age: 28, community: 'Asuboi', last: '19th Sep, 2026', visits: 3, phone: '024 ••• 4417' },
+        { name: 'Abena Mensa', age: 27, community: 'Asuboi', last: '11th Mar, 2026', visits: 1, phone: 'Not recorded' }
+      ],
+      reasons: ['Reading taken before she rested', 'Value was recorded wrongly', 'She is already under hospital care', 'Other reason'].map(l => l === reasonSel
+        ? { label: l, border: '2px solid ' + navy, bg: '#EFF7FE', fg: navy }
+        : { label: l, border: '1px solid #D1D5DB', bg: '#FDFDFD', fg: '#1A1A18' }),
+      qrA: this.qr(17), qrB: this.qr(91),
+      summary: [
+        { k: 'Blood pressure', v: '140/95' }, { k: 'Severe headache', v: 'Yes' }, { k: 'Weeks pregnant', v: '32' },
+        { k: 'Visits this pregnancy', v: '4' }, { k: 'Haemoglobin', v: 'Missing' }
+      ],
+      chase: [
+        { name: 'Efua Owusu', days: '4 days', urgency: 'Emergency', finding: 'Heavy bleeding', color: '#C81E1E', meta: 'Kade Govt Hospital · Nkwanta' },
+        { name: 'Abena Mensah', days: 'Today', urgency: 'Emergency', finding: 'Signs of pre-eclampsia', color: '#C81E1E', meta: 'Kade Govt Hospital · Asuboi' },
+        { name: 'Adwoa Danso', days: '6 days', urgency: 'Urgent', finding: 'Anaemia', color: '#B48700', meta: 'Kade Govt Hospital · Odumase' }
+      ],
+      dhims: [
+        { k: 'ANC registrants', v: '9' }, { k: 'ANC visits – total', v: '41' }, { k: 'ANC 4th visit', v: '6' },
+        { k: 'BP 140/90 or higher', v: '3' }, { k: 'Referred – ANC', v: '4' }, { k: 'Referral feedback received', v: '1' }
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>

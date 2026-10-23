@@ -1,0 +1,10 @@
+﻿p1_01|Lafii is built for CHPS compounds in Northern Ghana, where the network is weak or missing. So we begin by switching on airplane mode. Everything you see from here runs with no internet at all.
+p1_02|Setting up takes one screen: the officer's name, her CHPS zone, her phone number and her facility.
+p1_03|Amina's day opens on two lists: the referrals she is still waiting to hear back on, and the women due for a visit this week.
+p1_04|Fati Alhassan has come in without her card, so Amina searches by name. Spellings vary, so the search is forgiving. Each record shows community, age and last visit, never a match score.
+p1_05|Two records may be the same woman. The app shows them side by side, with equal weight, and never merges them on its own. Amina asks Fati, and chooses.
+p1_06|This is Fati's fourth antenatal visit. Amina can speak her summary or tap it in; you will see voice capture on a real phone later in this video. Here she taps. Blood pressure: one forty over ninety five.
+p1_07|Every danger sign has three answers: yes, no, or not asked. A question nobody asked is never saved as a no. Fits: no. Bleeding: no. Severe headache: yes.
+p1_08|Every value is confirmed one at a time. There is no confirm-all button. A value that has not been confirmed is left out of the assessment, and anything not recorded says Missing. Nothing is guessed.
+p1_09|The assessment comes from a fixed protocol rule, not from AI. High blood pressure with a severe headache: signs of pre-eclampsia, refer today. It shows exactly which values triggered it.
+p1_10|Amina issues the referral. She writes this short code on Fati's card, and the signed QR code carries Fati's details and the reasons for her referral. Now the hospital scans it, still with no network.

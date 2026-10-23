@@ -1,0 +1,14 @@
+name: reports
+description: Register line and monthly aggregate. Pure Dart.
+publish_to: none
+version: 0.1.0
+
+environment:
+  sdk: ^3.5.0
+
+dependencies:
+  visit_schema:
+    path: ../visit_schema
+
+dev_dependencies:
+  test: ^1.25.0

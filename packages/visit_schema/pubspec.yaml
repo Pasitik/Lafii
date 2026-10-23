@@ -1,0 +1,10 @@
+name: visit_schema
+description: Shared models, JSON and provenance enforcement. Pure Dart.
+publish_to: none
+version: 0.1.0
+
+environment:
+  sdk: ^3.5.0
+
+dev_dependencies:
+  test: ^1.25.0
